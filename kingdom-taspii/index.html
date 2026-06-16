@@ -292,6 +292,159 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);font-famil
 .ending-finale{margin-top:18px;font-family:'Cormorant Garamond',serif;font-size:clamp(14px,4vw,18px);line-height:1.9;color:rgba(232,224,240,0.9)}
 .ending-finale .miss{font-family:'Great Vibes',cursive;font-size:clamp(22px,6vw,30px);color:var(--gold2);display:block;margin-top:8px}
 .ending-moon{font-size:80px;animation:moon-glow 4s ease-in-out infinite,float 6s ease-in-out infinite;display:block;margin:0 auto 20px}
+
+/* ============ NEW SCENE: LOST BUTTERFLY MESSENGER ============ */
+#scene-butterfly-messenger{background:#030612}
+.messenger-scene{position:relative;z-index:10;text-align:center;padding:20px;max-width:500px}
+.messenger-title{font-family:'Cinzel Decorative',serif;font-size:clamp(16px,5vw,26px);color:var(--gold);margin-bottom:12px}
+.messenger-sub{font-style:italic;font-size:clamp(13px,3.5vw,16px);color:rgba(200,180,255,0.7);margin-bottom:24px}
+.messenger-butterfly{font-size:clamp(25px,8vw,50px);cursor:pointer;animation:butterfly 2s ease-in-out infinite;transition:all .3s;display:inline-block}
+.messenger-butterfly:hover{transform:scale(1.2)}
+.messenger-butterfly.caught{animation:none;opacity:0}
+.messenger-message{margin-top:20px;padding:16px;border-radius:12px;background:rgba(10,8,30,0.8);border:1px solid rgba(212,168,75,0.2);font-style:italic;font-size:clamp(13px,3.5vw,16px);color:rgba(200,180,255,0.85);display:none}
+.messenger-message.show{display:block;animation:fadein .8s ease}
+.message-content p{margin:8px 0;line-height:1.6}
+
+/* ============ NEW SCENE: CHILDHOOD ROOM ============ */
+#scene-childhood-room{background:#050310}
+.childhood-room-container{position:relative;z-index:10;width:min(500px,92vw);padding:20px}
+.room-title{font-family:'Cinzel Decorative',serif;font-size:clamp(16px,5vw,24px);color:var(--gold);text-align:center;margin-bottom:8px}
+.room-sub{font-style:italic;font-size:clamp(12px,3.5vw,14px);color:rgba(200,180,255,0.6);text-align:center;margin-bottom:20px}
+.room-objects{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:20px}
+.room-object{aspect-ratio:1;border-radius:16px;background:rgba(10,8,30,0.6);border:1px solid rgba(212,168,75,0.15);display:flex;flex-direction:column;align-items:center;justify-content:center;cursor:pointer;transition:all .4s;font-size:clamp(28px,7vw,40px)}
+.room-object:hover{background:rgba(155,126,200,0.15);border-color:rgba(212,168,75,0.35);transform:translateY(-4px)}
+.room-object-label{font-size:11px;color:rgba(200,180,255,0.6);margin-top:8px;font-style:italic}
+.memory-popup{position:absolute;inset:0;background:rgba(0,0,0,0.9);z-index:100;display:none;align-items:center;justify-content:center;flex-direction:column;padding:20px;text-align:center}
+.memory-popup.show{display:flex}
+.memory-text{font-family:'Great Vibes',cursive;font-size:clamp(18px,5vw,26px);color:rgba(200,180,255,0.9);line-height:1.8;margin-bottom:16px}
+.clock-spin{animation:time-spin 2s linear infinite;font-size:clamp(50px,14vw,90px)}
+.year-display{font-family:'Cinzel Decorative',serif;font-size:clamp(24px,7vw,40px);color:var(--gold);margin:10px 0}
+
+/* ============ NEW SCENE: CARTOON TELEVISION ============ */
+#scene-cartoon-tv{background:#02040a}
+.tv-container{position:relative;z-index:10;text-align:center;padding:20px;max-width:500px}
+.tv-title{font-family:'Cinzel Decorative',serif;font-size:clamp(16px,5vw,24px);color:var(--gold);margin-bottom:8px}
+.tv-sub{font-style:italic;font-size:clamp(13px,3.5vw,16px);color:rgba(200,180,255,0.7);margin-bottom:20px}
+.tv-screen{width:min(320px,85vw);height:min(240px,60vw);background:#000;border-radius:16px;border:4px solid #333;margin:0 auto 20px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.tv-content{font-size:clamp(40px,12vw,80px);transition:all .3s}
+.tv-content.glitch{animation:glitch .2s ease infinite}
+.channel-indicator{position:absolute;top:10px;right:10px;font-family:'Cinzel Decorative',serif;font-size:12px;color:rgba(255,255,255,0.5)}
+.remote-controls{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.remote-btn{padding:10px 20px;border-radius:8px;background:rgba(212,168,75,0.15);border:1px solid rgba(212,168,75,0.3);color:var(--gold);cursor:pointer;font-family:'Cinzel Decorative',serif;font-size:12px;transition:all .3s}
+.remote-btn:hover{background:rgba(212,168,75,0.3)}
+.remote-btn.correct{background:rgba(100,200,100,0.3);border-color:#4caf50}
+.remote-btn.wrong{background:rgba(200,100,100,0.3);border-color:#f44336}
+
+/* ============ NEW SCENE: DORAEMON POCKET ============ */
+#scene-doraemon{background:#0a0818}
+.doraemon-container{position:relative;z-index:10;text-align:center;padding:20px;max-width:500px}
+.doraemon-title{font-family:'Cinzel Decorative',serif;font-size:clamp(16px,5vw,24px);color:var(--gold);margin-bottom:8px}
+.doraemon-sub{font-style:italic;font-size:clamp(13px,3.5vw,16px);color:rgba(200,180,255,0.7);margin-bottom:24px}
+.pocket-display{font-size:clamp(60px,16vw,100px);margin:20px 0;cursor:pointer;transition:transform .3s}
+.pocket-display:hover{transform:scale(1.1)}
+.gadget-result{margin-top:20px;padding:20px;border-radius:12px;background:rgba(10,8,30,0.8);border:1px solid rgba(212,168,75,0.2);display:none}
+.gadget-result.show{display:block;animation:fadein .6s ease}
+.gadget-name{font-family:'Cinzel Decorative',serif;font-size:clamp(18px,5vw,24px);color:var(--gold);margin-bottom:8px}
+.gadget-effect{font-style:italic;font-size:clamp(13px,3.5vw,16px);color:rgba(200,180,255,0.85)}
+
+/* ============ NEW SCENE: MR BEAN MISSION ============ */
+#scene-mrbean{background:#02050a}
+.mrbean-container{position:relative;z-index:10;text-align:center;padding:20px;max-width:500px}
+.mrbean-title{font-family:'Cinzel Decorative',serif;font-size:clamp(16px,5vw,24px);color:var(--gold);margin-bottom:8px}
+.mrbean-sub{font-style:italic;font-size:clamp(13px,3.5vw,16px);color:rgba(200,180,255,0.7);margin-bottom:20px}
+.timer-display{font-family:'Cinzel Decorative',serif;font-size:clamp(32px,9vw,56px);color:var(--gold2);margin:16px 0}
+.teddy-hunt-area{width:min(340px,88vw);height:min(300px,55vw);border-radius:16px;background:rgba(5,5,20,0.8);border:1px solid rgba(212,168,75,0.2);margin:20px auto;position:relative;overflow:hidden}
+.hidden-teddy{position:absolute;font-size:clamp(24px,6vw,36px);cursor:pointer;opacity:.3;transition:opacity .3s}
+.hidden-teddy:hover{opacity:1}
+.hidden-teddy.found{opacity:0;pointer-events:none}
+
+/* ============ NEW SCENE: TOM & JERRY CHASE ============ */
+#scene-tomjerry{background:#060912}
+.tomjerry-container{position:relative;z-index:10;text-align:center;padding:20px;max-width:500px}
+.tomjerry-title{font-family:'Cinzel Decorative',serif;font-size:clamp(16px,5vw,24px);color:var(--gold);margin-bottom:8px}
+.tomjerry-sub{font-style:italic;font-size:clamp(13px,3.5vw,16px);color:rgba(200,180,255,0.7);margin-bottom:20px}
+.chase-area{width:min(340px,88vw);height:min(300px,55vw);border-radius:16px;background:rgba(5,5,20,0.8);border:1px solid rgba(212,168,75,0.2);margin:20px auto;position:relative;overflow:hidden}
+.jerry-character{position:absolute;font-size:clamp(32px,8vw,48px);cursor:pointer;transition:all .3s;z-index:5}
+.jerry-character:hover{transform:scale(1.2)}
+.chase-progress{margin-top:12px;font-size:14px;color:rgba(212,168,75,0.7)}
+
+/* ============ NEW SCENE: PRINCESS TEST ============ */
+#scene-princess-test{background:#050310}
+.princess-test-container{position:relative;z-index:10;text-align:center;padding:20px;max-width:500px}
+.princess-test-title{font-family:'Cinzel Decorative',serif;font-size:clamp(16px,5vw,24px);color:var(--gold);margin-bottom:8px}
+.princess-test-sub{font-style:italic;font-size:clamp(13px,3.5vw,16px);color:rgba(200,180,255,0.7);margin-bottom:24px}
+.question-card{padding:24px;border-radius:16px;background:rgba(10,8,30,0.8);border:1px solid rgba(212,168,75,0.2);margin-bottom:20px}
+.question-text{font-family:'Cormorant Garamond',serif;font-size:clamp(16px,4.5vw,20px);color:rgba(232,224,240,0.9);margin-bottom:16px}
+.answer-options{display:flex;flex-direction:column;gap:12px}
+.answer-btn{padding:12px 20px;border-radius:10px;background:rgba(155,126,200,0.15);border:1px solid rgba(155,126,200,0.3);color:rgba(232,224,240,0.9);cursor:pointer;font-family:'Cormorant Garamond',serif;font-size:clamp(14px,4vw,16px);transition:all .3s}
+.answer-btn:hover{background:rgba(155,126,200,0.3)}
+.princess-title-result{margin-top:24px;padding:24px;border-radius:16px;background:rgba(212,168,75,0.15);border:1px solid var(--gold);display:none}
+.princess-title-result.show{display:block;animation:fadein .8s ease}
+.princess-title-text{font-family:'Cinzel Decorative',serif;font-size:clamp(20px,6vw,28px);color:var(--gold);margin-bottom:8px}
+.princess-title-sub{font-style:italic;font-size:clamp(14px,4vw,18px);color:rgba(200,180,255,0.85)}
+
+/* ============ UPGRADED CONSTELLATION ============ */
+#scene-stars-upgraded{background:#020510}
+.star-scene-upgraded{position:relative;z-index:10;text-align:center;width:100%;max-width:600px;padding:20px}
+.star-title-upgraded{font-family:'Cinzel Decorative',serif;font-size:clamp(14px,4vw,20px);color:var(--gold);margin-bottom:6px}
+.star-sub-upgraded{font-style:italic;font-size:clamp(12px,3.5vw,15px);color:rgba(200,180,255,0.6);margin-bottom:16px}
+#star-canvas-upgraded{border-radius:14px;border:1px solid rgba(212,168,75,0.15);cursor:crosshair;background:rgba(2,5,20,0.8);touch-action:none}
+#star-msg-upgraded{margin-top:12px;font-style:italic;font-size:14px;color:rgba(212,168,75,0.7);min-height:20px}
+#star-continue-upgraded{margin-top:16px;display:none}
+
+/* ============ HIDDEN SECRETS HUD ============ */
+.secrets-hud{position:fixed;top:16px;left:16px;z-index:999;padding:8px 16px;border-radius:20px;background:rgba(10,8,30,0.9);border:1px solid rgba(212,168,75,0.3);font-size:12px;color:var(--gold);font-family:'Cinzel Decorative',serif}
+.secret-item{position:absolute;font-size:16px;cursor:pointer;opacity:.2;transition:opacity .3s,z-index:3}
+.secret-item:hover{opacity:.8}
+.secret-item.found{opacity:0;pointer-events:none}
+
+/* ============ UPGRADED BIRTHDAY HALL ============ */
+#scene-birthday-upgraded{background:#020510}
+.bday-title-upgraded{position:relative;z-index:10;font-family:'Cinzel Decorative',serif;font-size:clamp(18px,5vw,30px);margin-bottom:6px;text-align:center}
+.bday-sub-upgraded{position:relative;z-index:10;font-style:italic;font-size:clamp(13px,3.5vw,16px);color:rgba(200,180,255,0.7);margin-bottom:16px;text-align:center}
+.castle-lights{position:absolute;inset:0;pointer-events:none;z-index:2}
+.castle-light{position:absolute;width:8px;height:8px;border-radius:50%;background:var(--gold2);opacity:0;animation:glow-pulse 2s ease-in-out infinite}
+.guest-arrival{position:absolute;font-size:24px;animation:fly-in 1.5s ease forwards;opacity:0;z-index:3}
+.firework{position:absolute;width:4px;height:4px;border-radius:50%;background:var(--gold2);animation:confetti-fall 3s ease-out forwards}
+.birthday-shout{position:relative;z-index:10;text-align:center;margin-top:20px;font-family:'Cinzel Decorative',serif;font-size:clamp(20px,6vw,32px);color:var(--gold);display:none;animation:fadein 1s ease}
+
+/* ============ MOON CONVERSATION ============ */
+#scene-moon-conversation{background:#010308}
+.moon-conversation-container{position:relative;z-index:10;text-align:center;padding:20px;max-width:540px}
+.moon-display{font-size:clamp(80px,20vw,140px);cursor:pointer;animation:moon-glow 4s ease-in-out infinite,float 6s ease-in-out infinite;margin:20px 0}
+.moon-message{font-family:'Great Vibes',cursive;font-size:clamp(18px,5vw,26px);color:rgba(200,180,255,0.85);line-height:1.8;margin:20px 0;min-height:80px;transition:opacity .5s}
+.moon-hint{font-style:italic;font-size:clamp(12px,3.5vw,14px);color:rgba(212,168,75,0.5)}
+
+/* ============ LETTER FRAGMENTS ============ */
+#scene-letter-fragments{background:#050310}
+.letter-fragments-container{position:relative;z-index:10;width:min(500px,92vw);padding:20px}
+.fragments-title{font-family:'Cinzel Decorative',serif;font-size:clamp(16px,5vw,24px);color:var(--gold);text-align:center;margin-bottom:8px}
+.fragments-sub{font-style:italic;font-size:clamp(12px,3.5vw,14px);color:rgba(200,180,255,0.6);text-align:center;margin-bottom:20px}
+.fragments-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:20px}
+.fragment-piece{aspect-ratio:1;border-radius:8px;background:rgba(10,8,30,0.6);border:1px solid rgba(212,168,75,0.15);display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all .4s;font-size:20px;opacity:.3}
+.fragment-piece.collected{opacity:1;background:rgba(212,168,75,0.15);border-color:rgba(212,168,75,0.4)}
+.fragment-piece.missing{opacity:.1}
+.assembled-letter{padding:24px;border-radius:16px;background:rgba(30,18,50,0.95);border:1px solid rgba(212,168,75,0.25);display:none}
+.assembled-letter.show{display:block;animation:letter-assemble 1s ease}
+.assembled-letter-text{font-family:'Cormorant Garamond',serif;font-size:clamp(15px,4vw,19px);line-height:2;color:rgba(232,224,240,0.9)}
+.assembled-letter-text .line{display:block;margin-bottom:2px}
+.assembled-sig{font-family:'Great Vibes',cursive;font-size:clamp(22px,6vw,32px);color:var(--gold);margin-top:24px;text-align:right}
+
+/* ============ THRONE ROOM (ULTIMATE ENDING) ============ */
+#scene-throne-room{background:#010205}
+.throne-room-container{position:relative;z-index:10;text-align:center;padding:20px;max-width:600px}
+.throne-display{font-size:clamp(100px,25vw,160px);margin:20px 0;animation:throne-glow 3s ease-in-out infinite}
+.throne-message{font-family:'Cinzel Decorative',serif;font-size:clamp(18px,5vw,26px);color:var(--gold);line-height:1.8;margin:20px 0}
+.throne-sub{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(15px,4.5vw,21px);color:rgba(200,180,255,0.75);line-height:1.8;margin:20px 0}
+.throne-finale{font-family:'Great Vibes',cursive;font-size:clamp(24px,7vw,36px);color:var(--gold2);margin:24px 0;animation:shimmer 3s linear infinite}
+.fade-to-moonlight{position:absolute;inset:0;background:radial-gradient(circle at 50% 50%,rgba(180,160,255,0.3),rgba(2,2,15,0.98));z-index:1;opacity:0;transition:opacity 3s}
+.fade-to-moonlight.active{opacity:1}
+
+/* ============ NEW ANIMATIONS ============ */
+@keyframes time-spin{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+@keyframes glitch{0%,100%{transform:translate(0)}20%{transform:translate(-2px,2px)}40%{transform:translate(-2px,-2px)}60%{transform:translate(2px,2px)}80%{transform:translate(2px,-2px)}}
+@keyframes throne-glow{0%,100%{box-shadow:0 0 30px rgba(212,168,75,0.3)}50%{box-shadow:0 0 80px rgba(212,168,75,0.6)}}
+@keyframes letter-assemble{0%{opacity:0;transform:scale(0.8)}100%{opacity:1;transform:scale(1)}}
 </style>
 </head>
 <body>
@@ -348,6 +501,7 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);font-famil
       <div class="game-card" onclick="startChaseGame();document.getElementById('game-area').style.display='block'">Cartoon Chase</div>
     </div>
     <div id="game-area" class="game-area" style="display:none;">
+      <div id="snow-score" style="position:absolute;top:10px;right:10px;z-index:100;font-family:'Cinzel Decorative',serif;font-size:18px;color:var(--gold2);">Score: 0</div>
       <div id="snow-area" style="width:100%;height:100%;position:absolute;inset:0;"></div>
       <div id="dress-area" style="width:100%;height:100%;position:absolute;inset:0;display:flex;align-items:flex-start;justify-content:flex-start;padding:8px;"></div>
       <div id="chase-area" style="width:100%;height:100%;position:absolute;inset:0;"></div>
@@ -425,65 +579,72 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);font-famil
       <div class="book-page active" id="page-1">
         <div class="page-card">
           <div class="page-text" style="font-family:'Great Vibes',cursive;font-size:clamp(26px,8vw,42px)">Once upon a time...</div>
-          <div class="page-num">Page 1 of 9</div>
+          <div class="page-num">Page 1 of 10</div>
         </div>
       </div>
 
       <div class="book-page" id="page-2">
         <div class="page-card">
-          <div class="page-text">Ek kingdom tha,<br>jahan chand raat bhar<br>kahaniyan sunata tha. 🌙</div>
-          <div class="page-num">Page 2 of 9</div>
+          <div class="page-text">Ek door ke jadoo bhare kingdom mein...🌙</div>
+          <div class="page-num">Page 2 of 10</div>
         </div>
       </div>
 
       <div class="book-page" id="page-3">
         <div class="page-card">
-          <div class="page-text">Aur us kingdom mein,<br>sab ek Princess ka<br>intezaar karte thay. 👑</div>
-          <div class="page-num">Page 3 of 9</div>
+          <div class="page-text">Jahan chandni raaton ko aasman roshan karti thi...👑</div>
+          <div class="page-num">Page 3 of 10</div>
         </div>
       </div>
 
       <div class="book-page" id="page-4">
         <div class="page-card">
-          <div class="page-text">Woh Princess phoolon se<br>baat nahi karti thi...<br>magar phool usse dekh kar<br>khil uthte thay. 🌸</div>
-          <div class="page-num">Page 4 of 9</div>
+          <div class="page-text">Jahan titliyan hawaon ke saath naachti thi... 🌸</div>
+          <div class="page-num">Page 4 of 10</div>
         </div>
       </div>
 
       <div class="book-page" id="page-5">
         <div class="page-card">
-          <div class="page-text">Woh jadoo nahi karti thi...<br>magar uski muskurahat mein<br>thoda sa jadoo zaroor tha. ✨</div>
-          <div class="page-num">Page 5 of 9</div>
+          <div class="page-text">Wahan ek pyari si princess rehti thi..<br>Masoom si..<br>Kind si.. <br> Aur Special si.. ✨</div>
+          <div class="page-num">Page 5 of 10</div>
         </div>
       </div>
 
       <div class="book-page" id="page-6">
         <div class="page-card">
-          <div class="page-text">Kuch log usse<br><em style="font-family:'Great Vibes',cursive;font-size:clamp(24px,7vw,38px);color:var(--gold)">Taspia</em><br>kehte thay.</div>
-          <div class="page-num">Page 6 of 9</div>
+          <div class="page-text">Kuch log use Taspia kehte the…<br><em style="font-family:'Great Vibes',cursive;font-size:clamp(24px,7vw,38px);color:var(--gold)">Taspia</em><br>kehte thay.</div>
+          <div class="page-num">Page 6 of 10</div>
         </div>
       </div>
 
       <div class="book-page" id="page-7">
         <div class="page-card">
-          <div class="page-text">Lekin is kingdom mein,<br>woh sirf<br><em style="font-family:'Great Vibes',cursive;font-size:clamp(28px,8vw,44px);color:var(--rose)">Bachii</em><br>thi. 🤍</div>
-          <div class="page-num">Page 7 of 9</div>
+          <div class="page-text">Lekin kisi ke liye woh sirf?<br><em style="font-family:'Great Vibes',cursive;font-size:clamp(28px,8vw,44px);color:var(--rose)">Bachii</em><br>thi. 🤍</div>
+          <div class="page-num">Page 7 of 10</div>
         </div>
       </div>
 
       <div class="book-page" id="page-8">
         <div class="page-card">
-          <div class="page-text">Aur bohot arse se,<br>ye kingdom apni Princess ka<br>intezaar kar raha tha...<br><span style="font-size:24px">🦋✨</span></div>
-          <div class="page-num">Page 8 of 9</div>
+          <div class="page-text">Lekin kisi ke liye woh sirf?<br><em style="font-family:'Great Vibes',cursive;font-size:clamp(28px,8vw,44px);color:var(--rose)">Bachii</em><br>thi. 🤍</div>
+          <div class="page-num">Page 7 of 10</div>
         </div>
       </div>
 
       <div class="book-page" id="page-9">
+        <div class="page-card">
+          <div class="page-text">Aur bohot arse se,<br>ye kingdom apni Princess ka<br>intezaar kar raha tha...<br><span style="font-size:24px">🦋✨</span></div>
+          <div class="page-num">Page 8 of 10</div>
+        </div>
+      </div>
+
+      <div class="book-page" id="page-10">
         <div class="page-card" style="position:relative">
           <div class="page-text big shimmer">👑 Princess Taspii 👑</div>
           <div class="page-text" style="margin-top:12px;font-size:clamp(15px,4vw,19px)">Welcome Home.<br>Tumhara kingdom tumhara<br>intezaar kar raha tha. 🤍</div>
           <div class="page-text" style="margin-top:10px;font-size:clamp(13px,3.5vw,16px);color:rgba(200,180,255,0.65)">Your magical adventure begins now. ✨</div>
-          <div class="page-num">Page 9 of 9</div>
+          <div class="page-num">Page 10 of 10</div>
           <div class="hidden-butterfly" title="Click me...">🦋
             <div class="butterfly-tooltip">The kingdom never stopped shining...<br>but it always looked forward to its princess returning. 🤍</div>
           </div>
@@ -511,7 +672,35 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);font-famil
     <div class="butterfly-sub">Tap the butterflies to light the path...</div>
     <div id="butterfly-field"></div>
     <div id="butterfly-progress">0 of 8 butterflies found</div>
-    <div id="butterfly-continue"><button class="btn" onclick="goTo('garden')">Enter the Garden ✨</button></div>
+    <div id="butterfly-continue"><button class="btn" onclick="goTo('butterfly-messenger')">Follow the Messenger ✨</button></div>
+  </div>
+</div>
+
+<!-- ============ SCENE 4.5: LOST BUTTERFLY MESSENGER ============ -->
+<div class="scene" id="scene-butterfly-messenger">
+  <div class="bg-overlay" style="background:radial-gradient(circle at center,rgba(20,10,40,0.4),rgba(5,3,20,0.85))"></div>
+  <div class="messenger-scene">
+    <div class="messenger-title">🦋 Lost Butterfly Messenger</div>
+    <div class="messenger-sub">A lost butterfly carries a secret message... catch it to read!</div>
+    <div id="messenger-butterfly" class="messenger-butterfly">🦋</div>
+    <div id="messenger-message" class="messenger-message" style="display:none">
+      <div class="message-content">
+        <p>✨ Princess Taspii,</p>
+        <p>Kabhi kabhi main yeh baat nahi keh pata, lekin tum meri life ki bohot special person ho.</p>
+        <p>Please kabhi mat sochna ke tum akeli ho.</p>
+        <p>Main hamesha yahan hoon.</p>
+        <p>Good ho ya bad, khush ho ya udaas, message kar dena.</p>
+        <p>Apna khayal rakha karo.</p>
+        <p>Tabiyat dekha karo.</p>
+        <p>Aur zyada stress mat liya karo.</p>
+        <p>Bas itna yaad rakhna...</p>
+        <p>Tumhari value bohot zyada hai.</p>
+        <p style="margin-top:16px">– Athiq 🤍</p>
+      </div>
+    </div>
+    <div id="messenger-continue" style="display:none;margin-top:20px">
+      <button class="btn" onclick="goTo('garden')">Continue to Memory Garden ✨</button>
+    </div>
   </div>
 </div>
 
@@ -529,7 +718,109 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);font-famil
     <div class="flower" onclick="bloomFlower(this,'Har phool tumhare liye khila hai 🌸')"><div class="f-icon">💐</div><div class="f-text"></div></div>
     <div class="flower" onclick="bloomFlower(this,'Janam din mubarak, Princess Bachii 🤍')"><div class="f-icon">🌼</div><div class="f-text"></div></div>
   </div>
-  <button class="btn" id="garden-continue" onclick="goTo('stars')" style="margin-top:20px;display:none;position:relative;z-index:10">Continue to the Stars ✨</button>
+  <button class="btn" id="garden-continue" onclick="goTo('childhood-room')" style="margin-top:20px;display:none;position:relative;z-index:10">Continue to Childhood Room ✨</button>
+</div>
+
+<!-- ============ SCENE 5.5: CHILDHOOD ROOM ============ -->
+<div class="scene" id="scene-childhood-room">
+  <div class="bg-overlay" style="background:radial-gradient(circle at center,rgba(30,15,50,0.3),rgba(5,3,20,0.9))"></div>
+  <div class="childhood-room-container">
+    <div class="room-title">🏠 Childhood Room</div>
+    <div class="room-sub">Tap each object to unlock a memory...</div>
+    <div class="room-objects">
+      <div class="room-object" onclick="showMemory(this,'clock')">🕰️<div class="room-object-label">Clock</div></div>
+      <div class="room-object" onclick="showMemory(this,'teddy')">🧸<div class="room-object-label">Teddy</div></div>
+      <div class="room-object" onclick="showMemory(this,'book')">📚<div class="room-object-label">Storybook</div></div>
+      <div class="room-object" onclick="showMemory(this,'crayon')">🖍️<div class="room-object-label">Crayons</div></div>
+      <div class="room-object" onclick="showMemory(this,'music')">🎵<div class="room-object-label">Music</div></div>
+      <div class="room-object" onclick="showMemory(this,'photo')">🖼️<div class="room-object-label">Photo</div></div>
+    </div>
+    <div id="memory-popup" class="memory-popup">
+      <div id="memory-content" class="memory-text"></div>
+      <button class="btn" onclick="closeMemory()" style="margin-top:16px">Close</button>
+    </div>
+    <button class="btn" id="room-continue" onclick="goTo('cartoon-tv')" style="margin-top:20px;display:none">Turn on the TV 📺</button>
+  </div>
+</div>
+
+<!-- ============ SCENE 5.6: CARTOON TELEVISION ============ -->
+<div class="scene" id="scene-cartoon-tv">
+  <div class="bg-overlay" style="background:radial-gradient(circle at center,rgba(10,5,30,0.4),rgba(2,2,15,0.9))"></div>
+  <div class="tv-container">
+    <div class="tv-title">📺 Cartoon Television</div>
+    <div class="tv-sub">Switch channels to find your favorite cartoon...</div>
+    <div class="tv-screen">
+      <div class="tv-content" id="tv-content">📺</div>
+      <div class="channel-indicator" id="channel-indicator">CH 1</div>
+    </div>
+    <div class="remote-controls">
+      <button class="remote-btn" onclick="switchChannel(1)">CH 1</button>
+      <button class="remote-btn" onclick="switchChannel(2)">CH 2</button>
+      <button class="remote-btn" onclick="switchChannel(3)">CH 3</button>
+      <button class="remote-btn" onclick="switchChannel(4)">CH 4</button>
+      <button class="remote-btn" onclick="switchChannel(5)">CH 5</button>
+    </div>
+    <div id="tv-message" style="margin-top:16px;font-style:italic;font-size:14px;color:rgba(200,180,255,0.7)"></div>
+    <button class="btn" id="tv-continue" onclick="goTo('doraemon')" style="margin-top:20px;display:none">Visit Doraemon 🤖</button>
+  </div>
+</div>
+
+<!-- ============ SCENE 5.7: DORAEMON POCKET ============ -->
+<div class="scene" id="scene-doraemon">
+  <div class="bg-overlay" style="background:radial-gradient(circle at center,rgba(20,10,40,0.4),rgba(5,3,20,0.9))"></div>
+  <div class="doraemon-container">
+    <div class="doraemon-title">🤖 Doraemon's Pocket</div>
+    <div class="doraemon-sub">Tap the pocket to pull out a magical gadget...</div>
+    <div class="pocket-display" id="pocket-display" onclick="pullGadget()">👛</div>
+    <div id="gadget-result" class="gadget-result">
+      <div class="gadget-name" id="gadget-name"></div>
+      <div class="gadget-effect" id="gadget-effect"></div>
+    </div>
+    <button class="btn" id="doraemon-continue" onclick="goTo('mrbean')" style="margin-top:20px;display:none">Help Mr Bean 🐻</button>
+  </div>
+</div>
+
+<!-- ============ SCENE 5.8: MR BEAN MISSION ============ -->
+<div class="scene" id="scene-mrbean">
+  <div class="bg-overlay" style="background:radial-gradient(circle at center,rgba(5,3,20,0.5),rgba(2,2,15,0.95))"></div>
+  <div class="mrbean-container">
+    <div class="mrbean-title">🐻 Mr Bean's Mission</div>
+    <div class="mrbean-sub">Find Teddy in 60 seconds!</div>
+    <div class="timer-display" id="mrbean-timer">60</div>
+    <div class="teddy-hunt-area" id="teddy-hunt-area"></div>
+    <div id="mrbean-message" style="margin-top:12px;font-style:italic;font-size:14px;color:rgba(200,180,255,0.7)"></div>
+    <button class="btn" id="mrbean-continue" onclick="goTo('tomjerry')" style="margin-top:20px;display:none">Chase Time! 🐭</button>
+  </div>
+</div>
+
+<!-- ============ SCENE 5.9: TOM & JERRY CHASE ============ -->
+<div class="scene" id="scene-tomjerry">
+  <div class="bg-overlay" style="background:radial-gradient(circle at center,rgba(10,5,25,0.4),rgba(3,3,18,0.9))"></div>
+  <div class="tomjerry-container">
+    <div class="tomjerry-title">🐭 Tom & Jerry Chase</div>
+    <div class="tomjerry-sub">Tap Jerry to escape from Tom!</div>
+    <div class="chase-area" id="tomjerry-chase-area"></div>
+    <div class="chase-progress" id="chase-progress">Taps: 0/10</div>
+    <button class="btn" id="tomjerry-continue" onclick="goTo('princess-test')" style="margin-top:20px;display:none">Take the Princess Test 👑</button>
+  </div>
+</div>
+
+<!-- ============ SCENE 5.10: PRINCESS TEST ============ -->
+<div class="scene" id="scene-princess-test">
+  <div class="bg-overlay" style="background:radial-gradient(circle at center,rgba(30,15,50,0.4),rgba(5,3,20,0.9))"></div>
+  <div class="princess-test-container">
+    <div class="princess-test-title">👑 The Princess Test</div>
+    <div class="princess-test-sub">Answer to discover your unique princess title...</div>
+    <div class="question-card" id="question-card">
+      <div class="question-text" id="question-text"></div>
+      <div class="answer-options" id="answer-options"></div>
+    </div>
+    <div class="princess-title-result" id="princess-title-result">
+      <div class="princess-title-text" id="princess-title-text"></div>
+      <div class="princess-title-sub" id="princess-title-sub"></div>
+    </div>
+    <button class="btn" id="princess-test-continue" onclick="goTo('stars')" style="margin-top:20px;display:none">Enter the Star Garden ⭐</button>
+  </div>
 </div>
 
 <!-- ============ SCENE 6: STAR GARDEN ============ -->
@@ -787,8 +1078,10 @@ function goTo(scene){
   document.getElementById('scene-'+scene).classList.add('active');
   currentScene=scene;
   if(scene==='butterfly')initButterflies();
+  if(scene==='butterfly-messenger')initMessengerButterfly();
   if(scene==='stars')initStarCanvas();
   if(scene==='crowns')initCrowns();
+  if(scene==='childhood-room')initChildhoodRoom();
 }
 
 // ============ PASSWORD ============
@@ -807,6 +1100,36 @@ function checkPassword(){
     inp.classList.add('shake','wrong');
     setTimeout(()=>inp.classList.remove('shake','wrong'),800);
   }
+}
+
+// ============ CHILDHOOD ROOM ============
+let memoriesUnlocked=0;
+const TOTAL_MEMORIES=6;
+const memoryMessages={
+  clock:'⏰ Time flew so fast... from your first steps to today.',
+  teddy:'🧸 Your faithful friend who listened to all your secrets.',
+  book:'📚 Stories that sparked your imagination and dreams.',
+  crayon:'🖍️ Colors that painted your world with wonder.',
+  music:'🎵 Melodies that made your heart dance with joy.',
+  photo:'🖼️ Moments frozen in time, forever precious.'
+};
+function showMemory(el,type){
+  if(el.classList.contains('unlocked'))return;
+  el.classList.add('unlocked');
+  memoriesUnlocked++;
+  chimeSound();
+  const popup=document.getElementById('memory-popup');
+  const content=document.getElementById('memory-content');
+  content.textContent=memoryMessages[type];
+  popup.classList.add('show');
+  if(memoriesUnlocked>=TOTAL_MEMORIES){
+    setTimeout(()=>{
+      document.getElementById('room-continue').style.display='block';
+    },1000);
+  }
+}
+function closeMemory(){
+  document.getElementById('memory-popup').classList.remove('show');
 }
 
 // ============ STORYBOOK ============
@@ -861,9 +1184,40 @@ function catchButterfly(el){
   }
 }
 
+// ============ MESSENGER BUTTERFLY ============
+function initMessengerButterfly(){
+  const butterfly=document.getElementById('messenger-butterfly');
+  const message=document.getElementById('messenger-message');
+  const continueBtn=document.getElementById('messenger-continue');
+  
+  if(butterfly){
+    butterfly.addEventListener('click',()=>{
+      if(butterfly.classList.contains('caught'))return;
+      butterfly.classList.add('caught');
+      chimeSound();
+      setTimeout(()=>{
+        message.classList.add('show');
+        setTimeout(()=>{
+          continueBtn.style.display='block';
+        },1500);
+      },500);
+    });
+    butterfly.addEventListener('touchstart',()=>{
+      if(butterfly.classList.contains('caught'))return;
+      butterfly.classList.add('caught');
+      chimeSound();
+      setTimeout(()=>{
+        message.classList.add('show');
+        setTimeout(()=>{
+          continueBtn.style.display='block';
+        },1500);
+      },500);
+    },{passive:true});
+  }
+}
+
 // ============ FLOWERS ============
 function bloomFlower(el,text){
-  if(el.classList.contains('bloomed'))return;
   el.classList.add('bloomed');
   el.querySelector('.f-icon').textContent=el.querySelector('.f-icon').textContent;
   el.querySelector('.f-text').textContent=text;
@@ -1018,6 +1372,7 @@ function triggerBirthday(){
 }
 function launchConfetti(){
   const layer=document.getElementById('confetti-layer');
+  layer.innerHTML=''; // Clear existing confetti before adding new pieces
   const colors=['#d4a84b','#f0c060','#9b7ec8','#d4829a','#88aaff','#ffffff'];
   for(let i=0;i<80;i++){
     const c=document.createElement('div');
@@ -1063,12 +1418,7 @@ function chimeSound(){
 // ============ RANDOM EVENTS ============
 // small interactive games
 function initGames(){
-  // attach games button to main navigation if present
-  const gamesBtn = document.createElement('button');
-  gamesBtn.className='btn'; gamesBtn.textContent='Play Games';
-  gamesBtn.style.position='fixed'; gamesBtn.style.left='16px'; gamesBtn.style.bottom='16px'; gamesBtn.style.zIndex=999;
-  gamesBtn.addEventListener('click',()=>{goTo('games')});
-  document.body.appendChild(gamesBtn);
+  // games button removed as requested
 }
 
 function startSnowGame(){
@@ -1115,6 +1465,7 @@ function startChaseGame(){
 }
 
 initGames();
+initMessengerButterfly();
 
 setInterval(()=>{
   const butterflies=['🦋','✨','🌟'];
